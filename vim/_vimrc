@@ -1,0 +1,54 @@
+set nocompatible
+
+" Note: Skip initialization for vim-tiny or vim-small.
+ if 0 | endif
+
+ if has('vim_starting')
+   if &compatible
+     set nocompatible               " Be iMproved
+   endif
+
+   " Required:
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+ endif
+
+ " Required:
+ call neobundle#begin(expand('~/.vim/bundle/'))
+
+ " Let NeoBundle manage NeoBundle
+ " Required:
+ NeoBundleFetch 'Shougo/neobundle.vim'
+ NeoBundle 'jeffreyiacono/vim-colors-wombat'
+
+ " My Bundles here:
+ " Refer to |:NeoBundle-examples|.
+ " Note: You don't set neobundle setting in .gvimrc!
+
+ " color schemes
+ NeoBundle 'altercation/vim-colors-solarized'
+ NeoBundle 'altercation/vim-colors-solarized'
+ NeoBundle 'tomasr/molokai'
+ NeoBundle 'scrooloose/nerdtree'
+ NeoBundle 'kien/rainbow_parentheses.vim'
+ call neobundle#end()
+
+ " Required:
+ filetype plugin indent on
+
+ " If there are uninstalled bundles found on startup,
+ " this will conveniently prompt you to install them.
+ NeoBundleCheck
+
+syntax enable
+
+cd $HOME
+
+" sicent uganda
+set shortmess+=I
+
+" set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,cp932
+
+set directory=~/vimfiles/tmp
+set backupdir=~/vimfiles/tmp

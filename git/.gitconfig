@@ -1,0 +1,17 @@
+[user]
+	name = nakamuraruk
+	email = nakamuraruk@nttdata.co.jp
+
+[diff]
+	tool = p4merge
+
+[difftool "p4merge"]
+	cmd = "C:/program_files/Perforce/p4merge.exe $LOCAL $REMOTE"
+
+[mergetool "p4merge"]
+	cmd = "C:/program_files/Perforce/p4merge.exe $LOCAL $REMOTE $MERGED"
+	trustExitCode = true
+	keepBackup = false
+
+[core]
+	quotepath = false

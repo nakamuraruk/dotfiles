@@ -1,0 +1,13 @@
+set background=dark
+colorscheme molokai
+
+autocmd GUIEnter * set transparency=240
+
+set guioptions-=T
+
+au GUIEnter * simalt ~x
+
+set cursorline
+set cursorcolumn
+
+set guifont=Migu_1M:h12
